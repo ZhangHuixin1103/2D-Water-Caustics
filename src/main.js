@@ -472,7 +472,7 @@ function animate() {
     draw();
 
     if (saveImage) {
-        saveImage = true; // false
+        saveImage = true;
         window.open(canvas.toDataURL());
     }
 
