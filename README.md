@@ -15,7 +15,7 @@ Render **water caustics** at interractive framerates using **WebGL** with JavaSc
 
 ## Demo
 
-Click this [link](https://ZhangHuixin1103.github.io/2D-Water/)
+Click this [link](https://zhanghuixin1103.github.io/2D-Water-Caustics/)
 
 ## Interaction
 
