@@ -1,4 +1,4 @@
-import { Vector3 } from "../../lib/vector3.js";
+import { Vector3 } from "../lib/vector3.js";
 
 export class Camera {
 

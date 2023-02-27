@@ -1,4 +1,4 @@
-import { Vector2 } from "../../lib/vector2.js";
+import { Vector2 } from "../lib/vector2.js";
 import { WaveState } from "./state.js";
 
 export class Wave {

@@ -1,5 +1,5 @@
-import { Matrix4 } from "../../lib/matrix4.js";
-import { Vector3 } from "../../lib/vector3.js";
+import { Matrix4 } from "../lib/matrix4.js";
+import { Vector3 } from "../lib/vector3.js";
 
 import { Bottom } from "./bottom.js";
 import { Camera } from "./camera.js";
