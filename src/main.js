@@ -294,7 +294,7 @@ function initializeElements() {
 
     textureInput = document.getElementById("texture-input");
     textureInput.onchange = () => {
-        if (textureInput.files.length === 1 && textureInput.files[0].type === "image/jpg") {
+        if (textureInput.files.length === 1 && textureInput.files[0].type === "image/jpeg") {
             let image = bottom.image;
 
             let url = URL.createObjectURL(textureInput.files[0]);
@@ -473,7 +473,20 @@ function animate() {
 
     if (saveImage) {
         saveImage = false;
-        window.open(canvas.toDataURL());
+        let canvasImage = canvas.toDataURL('image/png');
+        let xhr = new XMLHttpRequest();
+        xhr.responseType = 'blob';
+        xhr.onload = function () {
+            let a = document.createElement('a');
+            a.href = window.URL.createObjectURL(xhr.response);
+            a.download = 'scene.png';
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        };
+        xhr.open('GET', canvasImage);
+        xhr.send();
     }
 
     requestAnimationFrame(animate);
