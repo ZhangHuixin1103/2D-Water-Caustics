@@ -16,7 +16,7 @@ p {
 #canvas {
     grid-column: 1;
     grid-row: 1;
-    background-color: black;
+    background-color: rgb(39, 39, 39);
 }
 
 #toolbar {

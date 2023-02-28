@@ -25,7 +25,7 @@ void main(){
     
     float lighting=max(-dot(normal,u_light),0.);
     
-    v_color=vec4(pow(lighting,2.)*vec3(0.,.8,1.),.4);
+    v_color=vec4(pow(lighting,2.)*vec3(0.6078, 0.9059, 0.9804),.4);
     
     gl_Position=u_matrix*position;
 }
