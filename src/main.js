@@ -10,14 +10,14 @@ import { Water } from "./water.js";
 import { Wave } from "./wave.js";
 import { WebGL } from "./webgl.js";
 
-const NORMAL_DEPTH_VS = "./glsl/normal-depth-vs.glsl";
-const NORMAL_DEPTH_FS = "./glsl/normal-depth-fs.glsl";
-const CAUSTIC_VS = "./glsl/caustic-vs.glsl";
-const CAUSTIC_FS = "./glsl/caustic-fs.glsl";
-const BOTTOM_VS = "./glsl/bottom-vs.glsl";
-const BOTTOM_FS = "./glsl/bottom-fs.glsl";
-const WATER_VS = "./glsl/water-vs.glsl";
-const WATER_FS = "./glsl/water-fs.glsl";
+const NORMAL_DEPTH_VS = "./ref/glsl/normal-depth-vs.glsl";
+const NORMAL_DEPTH_FS = "./ref/glsl/normal-depth-fs.glsl";
+const CAUSTIC_VS = "./ref/glsl/caustic-vs.glsl";
+const CAUSTIC_FS = "./ref/glsl/caustic-fs.glsl";
+const BOTTOM_VS = "./ref/glsl/bottom-vs.glsl";
+const BOTTOM_FS = "./ref/glsl/bottom-fs.glsl";
+const WATER_VS = "./ref/glsl/water-vs.glsl";
+const WATER_FS = "./ref/glsl/water-fs.glsl";
 
 const N_TEMPLATE = "_N_";
 const N = 200;
@@ -98,7 +98,7 @@ window.onload = () => {
 
     let image = bottom.image;
     image.onload = loadingComplete;
-    image.src = "ref/img/tile2.jpg"; // can change sand/tile .jpg yourself
+    image.src = "img/sand2.jpg"; // can change sand/tile .jpg yourself
 };
 
 window.onresize = resize;
